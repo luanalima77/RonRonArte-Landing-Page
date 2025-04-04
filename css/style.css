@@ -1,0 +1,38 @@
+/*Importações de fontes e arquivos da pasta css*/
+@import url("https://fonts.googleapis.com/css2?family=Jersey+10&display=swap");
+@import url("reset.css");
+@import url("whatIsRonRonArteSection.css");
+
+
+/*Definindo cores e fontes.*/
+:root{
+    --dark-yellow: #FFD101;
+    --black: #000000;
+    --white: #FFFFFF;
+    --main-font: "Jersey 10", sans-serif;
+}
+
+/*Definições gerais do corpo do site.*/
+body{
+    font-family: var(--main-font);
+    background-color: var(--black);
+    color: var(--white);
+    max-width: 100vw;
+}
+
+
+/*Configurações dos títulos.*/
+.titles{
+    color: var(--dark-yellow);
+    font-size: 6rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+/*Configurações dos parágrafos.*/
+.paragraphs{
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.3rem;
+}
