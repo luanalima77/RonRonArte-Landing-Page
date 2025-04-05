@@ -1,0 +1,101 @@
+.mvv{
+    height: auto;
+    padding: 2rem 0;
+}
+
+.mission__vision__values__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.circle {
+    background-color: var(--dark-yellow);
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid var(--white);
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    padding: 15px;
+    text-align: center;
+    color: var(--black);
+}
+
+.circle h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.circle p {
+    font-size: 1.2rem;
+    line-height: 1.3;
+}
+
+.circle:hover {
+    transform: scale(1.1);
+    background-color: var(--black);
+    border-color: var(--dark-yellow);
+    color: var(--dark-yellow);
+}
+
+/*RESPONSIVIDADE */
+@media (min-width: 768px) {
+    .mission__vision__values__container {
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 3rem;
+        padding: 3rem 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .circle {
+        width: 200px;
+        height: 200px;
+        padding: 20px;
+    }
+    
+    .circle h3 {
+        font-size: 2rem;
+    }
+    
+    .circle p {
+        font-size: 1.5rem;
+    }
+    
+    .circle:hover {
+        transform: scale(1.15);
+    }
+}
+
+@media (min-width: 1024px) {
+    .mission__vision__values__container {
+        gap: 4rem;
+    }
+    
+    .circle {
+        width: 220px;
+        height: 220px;
+    }
+    
+    .circle h3 {
+        font-size: 2rem;
+    }
+    
+    .circle p {
+        font-size: 1.3rem;
+    }
+    
+    .circle:hover {
+        transform: scale(1.25);
+    }
+}
