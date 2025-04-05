@@ -1,0 +1,90 @@
+/*Seções da página.*/
+.sections{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/*Containers das seções da página.*/
+.sections__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 90%;
+}
+
+
+/*Configurações dos títulos.*/
+.titles__left, .titles__right, .titles__center{
+    color: var(--dark-yellow);
+    font-size: 6rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+/*Configurações dos parágrafos.*/
+.paragraphs__left, .paragraphs__right, .paragraphs__center{
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+
+
+/*Container do gif*/
+.containers__images{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*RESPONSIVIDADE*/
+@media screen and (min-width: 991px){
+    .sections__container{
+        gap: 2rem;
+    }
+
+    .sections__container > * {
+        flex: 1;
+    }
+    
+    /*Textos à direita.*/
+    .sections:nth-child(1) .sections__container {
+        flex-direction: row;
+    }
+
+    /*Textos à esquerda.*/
+    .sections:nth-child(2) .sections__container {
+        flex-direction: row-reverse;
+    }
+
+    .titles__left, .paragraphs__left{
+        text-align: left;
+    }
+
+    .titles__right, .paragraphs__right{
+        text-align: right;
+    }
+}
+
+
+
+@media screen and (min-width: 1200px){
+    .paragraphs__left, .paragraphs__right, .paragraphs__center{
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    .paragraphs__left, .paragraphs__right, .paragraphs__center{
+        font-size: 1.5rem;
+    }
+
+}

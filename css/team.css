@@ -1,0 +1,48 @@
+/* Seção de equipe específica */
+.team {
+    height: auto; 
+    padding: 4rem 0;
+}
+
+.team__container{
+    height: auto; 
+}
+
+.catup__team__container__group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.catup__team__container__column__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    width: 280px;
+    margin-bottom: 2rem;
+}
+
+.catup__team__container__column__card__photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--dark-yellow);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.catup__team__container__column__card h3 {
+    color: var(--dark-yellow);
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.catup__team__container__column__card p {
+    font-size: 1.5rem;
+}

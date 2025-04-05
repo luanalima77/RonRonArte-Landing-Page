@@ -1,17 +1,6 @@
-.what__is__RonRonArte__section{
-    height: 100vh;
-}
-
-.what__is__RonRonArte__section__container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
 /*Gif do pombo.*/
 .pigeon__gif{
-   width: 15rem;
-   height: 15rem;
+   width: 20rem;
+   height: 20rem;
+   object-fit: contain;
 }
